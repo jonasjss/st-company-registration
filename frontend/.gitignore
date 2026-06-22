@@ -1,0 +1,27 @@
+# Node
+node_modules/
+dist/
+.nuxt/
+
+# Java / Maven
+target/
+*.class
+*.jar
+*.war
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Ambiente
+.env
+.env.local
