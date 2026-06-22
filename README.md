@@ -1,40 +1,73 @@
-# Sistema de Cadastro de Empresas - Portal de Serviços ST
+# 🚢 ST Company Registration
 
-## Sobre o Projeto
+> Sistema de cadastro e gerenciamento de empresas desenvolvido como prova técnica para a **Super Terminais**, contemplando análise de requisitos, modelagem UML, desenvolvimento Full Stack e consultas SQL.
 
-Este projeto foi desenvolvido como solução para a prova técnica da Super Terminais.
-
-O sistema tem como objetivo permitir o cadastro e gerenciamento de empresas por usuários internos e externos, contemplando os fluxos de Pessoa Jurídica, Pessoa Física e Pessoa Estrangeira, além do processo de aprovação, reprovação e vinculação de responsável.
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![Technical Test](https://img.shields.io/badge/Technical_Test-Super_Terminais-0052CC?style=for-the-badge)
+![Java](https://img.shields.io/badge/Java-22-ED8B00?style=for-the-badge\&logo=openjdk\&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)
+![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge\&logo=vuedotjs\&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
+![Oracle SQL](https://img.shields.io/badge/Oracle_SQL-Database-F80000?style=for-the-badge\&logo=oracle\&logoColor=white)
+![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge\&logo=git\&logoColor=white)
+![UML](https://img.shields.io/badge/UML-Documentation-blue?style=for-the-badge)
 
 ---
 
-## Tecnologias Utilizadas
+## 📋 Sobre o Projeto
+
+O sistema foi desenvolvido para atender aos requisitos da avaliação técnica da Super Terminais, permitindo o cadastro, gerenciamento e aprovação de empresas por usuários internos e externos.
+
+A solução contempla os fluxos de:
+
+* 🏢 Pessoa Jurídica
+* 👤 Pessoa Física
+* 🌎 Pessoa Estrangeira
+* 👨‍💼 Usuário Interno
+* 👨‍💻 Usuário Externo
+
+Além da implementação dos fluxos de negócio, o projeto também inclui documentação UML e consultas SQL solicitadas na avaliação.
+
+---
+
+## 🎯 Objetivos
+
+* Aplicar conceitos de Análise e Desenvolvimento de Sistemas.
+* Desenvolver uma API REST utilizando Java e Spring Boot.
+* Desenvolver uma interface moderna utilizando Vue.js.
+* Modelar os requisitos utilizando UML.
+* Implementar regras de negócio conforme especificação.
+* Demonstrar organização, arquitetura e boas práticas de desenvolvimento.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
 
 ### Backend
 
 * Java 22
-* Spring Boot 3.5
+* Spring Boot
 * Spring Data JPA
 * Maven
-* H2 Database
-* Oracle SQL (compatível com Oracle 12c)
+* Bean Validation
 
 ### Frontend
 
 * Vue 3
 * Vite
-* JavaScript
+* Axios
+* CSS3
 
 ### Ferramentas
 
 * Git
 * GitHub
 * Draw.io
-* VS Code
+* UML
 
 ---
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ```text
 st-company-registration/
@@ -46,63 +79,102 @@ st-company-registration/
 │
 ├── docs/
 │   ├── diagrams/
-│   │   ├── drawio/
-│   │   └── images/
-│   │
-│   ├── requirements/
-│   └── sql/
+│   ├── sql/
+│   └── screenshots/
 │
 └── README.md
 ```
 
 ---
 
-## Documentação
+## ✅ Funcionalidades Implementadas
 
-A documentação do projeto encontra-se na pasta `docs`.
+### Cadastro de Empresas
 
-### Diagramas UML
-
-* Modelo de Dados (DER)
-* Diagrama de Classe
-* Diagrama de Caso de Uso
-* Diagrama de Atividade
-
-### Requisitos
-
-* Requisitos Funcionais
-* Regras de Negócio
-
-### SQL
-
-Consultas desenvolvidas para a Parte 02 do teste técnico.
-
----
-
-## Funcionalidades
-
-* Cadastro de Empresa Pessoa Jurídica
-* Cadastro de Empresa Pessoa Física
-* Cadastro de Empresa Estrangeira
+* Cadastro de Pessoa Jurídica
+* Cadastro de Pessoa Física
+* Cadastro de Pessoa Estrangeira
+* Associação de Perfil
 * Upload de Documentos
-* Validação de CPF
-* Validação de CNPJ
+* Validação de Campos Obrigatórios
+
+### Gestão de Empresas
+
+* Listagem de Empresas
+* Consulta de Detalhes
 * Aprovação de Empresas
 * Reprovação de Empresas
-* Vinculação de Responsável
-* Consulta de Status
+* Atualização de Cadastro
+
+### Validações
+
+* CPF válido
+* CNPJ válido
+* Perfil obrigatório
+* Documento obrigatório
+* Tipos de arquivo permitidos
+* Arquivos duplicados
 
 ---
 
-## Executando o Backend
+## 📐 Diagramas UML
+
+Os diagramas desenvolvidos para atender à avaliação encontram-se na pasta:
+
+```text
+docs/diagrams/
+```
+
+### Diagramas Entregues
+
+* ✅ Diagrama de Caso de Uso
+* ✅ Diagrama de Classe
+* ✅ Diagrama de Atividade
+
+---
+
+## 🗄️ Banco de Dados
+
+A modelagem foi construída com base nos requisitos funcionais da avaliação.
+
+### Principais Entidades
+
+* Empresa
+* Documento
+* Usuário
+* Perfil
+
+---
+
+## 🧾 Consultas SQL
+
+As consultas da Parte 02 da avaliação encontram-se na pasta:
+
+```text
+docs/sql/
+```
+
+### Consultas Implementadas
+
+* Funcionários com cargos e departamentos
+* Funcionários ativos
+* Funcionários da Controladoria
+* Funcionários com salário superior a R$ 2.900,00
+* Quantidade de funcionários por departamento
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### Backend
 
 ```bash
 cd backend/company-registration
 
-mvnw.cmd spring-boot:run
+./mvnw spring-boot:run
 ```
 
-A aplicação estará disponível em:
+Servidor:
 
 ```text
 http://localhost:8080
@@ -110,7 +182,7 @@ http://localhost:8080
 
 ---
 
-## Executando o Frontend
+### Frontend
 
 ```bash
 cd frontend
@@ -120,7 +192,7 @@ npm install
 npm run dev
 ```
 
-A aplicação estará disponível em:
+Aplicação:
 
 ```text
 http://localhost:5173
@@ -128,8 +200,87 @@ http://localhost:5173
 
 ---
 
-## Autor
+## 📸 Demonstração
 
-Jonas Santos dos Santos
+Adicionar imagens das telas em:
 
-Prova Técnica - Super Terminais
+```text
+docs/screenshots/
+```
+
+Sugestões:
+
+* Tela de Cadastro
+* Tela de Listagem
+* Tela de Aprovação
+* Tela de Reprovação
+* Dashboard
+
+---
+
+## 📦 Entregáveis da Avaliação
+
+### Parte 01
+
+* ✅ Desenvolvimento Backend
+* ✅ Desenvolvimento Frontend
+* ✅ Regras de Negócio
+* ✅ Fluxos Principais
+* ✅ Fluxos Alternativos
+* ✅ Validações
+* ✅ Tratamento de Exceções
+
+### Documentação
+
+* ✅ Diagrama de Caso de Uso
+* ✅ Diagrama de Classe
+* ✅ Diagrama de Atividade
+
+### Parte 02
+
+* ✅ Consultas SQL
+* ✅ Relacionamentos entre tabelas
+* ✅ Consultas utilizando JOIN, WHERE e GROUP BY
+
+---
+
+## 🏗️ Arquitetura
+
+O projeto segue uma arquitetura em camadas:
+
+```text
+Frontend (Vue 3)
+        │
+        ▼
+REST API (Spring Boot)
+        │
+        ▼
+Camada de Serviço
+        │
+        ▼
+Camada de Persistência
+        │
+        ▼
+Banco de Dados
+```
+
+---
+
+## 👨‍💻 Desenvolvedor
+
+**Jonas Santos**
+
+GitHub:
+
+```text
+https://github.com/jonasjss
+```
+
+---
+
+## 📄 Observação
+
+Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica e demonstração de conhecimentos em análise, modelagem e desenvolvimento de software.
+
+---
+
