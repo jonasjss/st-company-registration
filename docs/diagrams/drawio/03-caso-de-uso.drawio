@@ -1,0 +1,97 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="KgIqvvs0XUaoLg5DDcqY">
+    <mxGraphModel dx="1285" dy="706" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-52" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="160" x="537" y="512" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-9" edge="1" parent="1" source="actor_autor" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="uc_editar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-12" edge="1" parent="1" source="actor_autor" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="uc_criar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="actor_autor" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="&lt;b&gt;Usuário&lt;br&gt;Externo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="40" x="47" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="sys_boundary" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;pointerEvents=0;whiteSpace=wrap;fontStyle=1;" value="Portal de Serviços ST - Cadastro de Empresa" vertex="1">
+          <mxGeometry height="379" width="550" x="147" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-20" edge="1" parent="sys_boundary" source="uc_criar" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="jCwP34XV0dVt1lCE1Eeo-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_criar" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;strokeWidth=1;" value="&lt;b&gt;Cadastrar Empresa&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="150" x="200" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_editar" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#000000;strokeWidth=1;" value="&lt;b&gt;Consultar Status da Empresa&lt;/b&gt;" vertex="1">
+          <mxGeometry height="71" width="137" x="53" y="178" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-17" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=light-dark(#000000, #6d5100);strokeWidth=1;" value="&lt;b&gt;Anexar Documento&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="110" x="220" y="249" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-21" parent="sys_boundary" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="30" width="60" x="283" y="189" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-34" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);strokeWidth=1;" value="&lt;b&gt;Aprovar Empresa&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="363" y="49" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-35" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);strokeWidth=1;" value="&lt;b&gt;Reprovar Empresa&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="363" y="149" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-36" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);strokeWidth=1;" value="&lt;b&gt;Consultar Empresa Cadastradas&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="363" y="229" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-61" parent="sys_boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=light-dark(#000000, #5c79a3);strokeWidth=1;" value="&lt;b&gt;Vincular Responsável&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="163" x="363" y="309" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontStyle=1" value="DIAGRAMA DE CASO DE USO UML" vertex="1">
+          <mxGeometry height="40" width="520" x="154" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-38" edge="1" parent="1" source="jCwP34XV0dVt1lCE1Eeo-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="jCwP34XV0dVt1lCE1Eeo-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-39" edge="1" parent="1" source="jCwP34XV0dVt1lCE1Eeo-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="jCwP34XV0dVt1lCE1Eeo-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-40" edge="1" parent="1" source="jCwP34XV0dVt1lCE1Eeo-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" target="jCwP34XV0dVt1lCE1Eeo-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-62" edge="1" parent="1" source="jCwP34XV0dVt1lCE1Eeo-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="uc_criar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-63" edge="1" parent="1" source="jCwP34XV0dVt1lCE1Eeo-33" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="jCwP34XV0dVt1lCE1Eeo-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-33" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="&lt;b&gt;Usuário&lt;br&gt;Interno&lt;/b&gt;" vertex="1">
+          <mxGeometry height="80" width="40" x="740" y="171" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Notas:&lt;/b&gt;&lt;br&gt;&lt;ul style=&quot;&quot;&gt;&lt;li style=&quot;&quot;&gt;&lt;b&gt;Usuário Externo:&lt;/b&gt; despachante, beneficiário, consignatário, armador, agente de carga, transportador ou novo usuário.&lt;/li&gt;&lt;li style=&quot;&quot;&gt;&lt;b&gt;Usuário Interno:&lt;/b&gt; Perfis administrativos do sistema&lt;/li&gt;&lt;/ul&gt;" vertex="1">
+          <mxGeometry height="105" width="323" x="60" y="478.5" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-50" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="" vertex="1">
+          <mxGeometry height="20" width="10" x="561" y="517" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-54" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="10" width="20" x="556" y="541" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-55" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="537" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;= Caso de Uso&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="60" x="597" y="534" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-57" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;= Ator&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="70" x="597" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-59" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" value="&lt;span style=&quot;font-size: 8px;&quot;&gt;= Caso de uso incluído&lt;/span&gt;" vertex="1">
+          <mxGeometry height="20" width="93" x="597" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="jCwP34XV0dVt1lCE1Eeo-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" value="&lt;b&gt;LEGENDA&lt;/b&gt;" vertex="1">
+          <mxGeometry height="22" width="160" x="537" y="490" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
