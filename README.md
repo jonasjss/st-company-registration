@@ -1,6 +1,6 @@
 # 🚢 ST Company Registration
 
-> Sistema de cadastro e gerenciamento de empresas desenvolvido como prova técnica para a **Super Terminais**, contemplando análise de requisitos, modelagem UML, desenvolvimento Full Stack e consultas SQL.
+> Sistema de cadastro e gerenciamento de empresas desenvolvido como prova técnica para a **Super Terminais**, contemplando análise de requisitos, modelagem UML, desenvolvimento Full Stack, documentação de API e consultas SQL.
 
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![Technical Test](https://img.shields.io/badge/Technical_Test-Super_Terminais-0052CC?style=for-the-badge)
@@ -9,56 +9,69 @@
 ![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge\&logo=vuedotjs\&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
 ![Oracle SQL](https://img.shields.io/badge/Oracle_SQL-Database-F80000?style=for-the-badge\&logo=oracle\&logoColor=white)
+![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?style=for-the-badge\&logo=swagger\&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge\&logo=git\&logoColor=white)
 ![UML](https://img.shields.io/badge/UML-Documentation-blue?style=for-the-badge)
 
 ---
 
-## 📋 Sobre o Projeto
+# 📋 Sobre o Projeto
 
-O sistema foi desenvolvido para atender aos requisitos da avaliação técnica da Super Terminais, permitindo o cadastro, gerenciamento e aprovação de empresas por usuários internos e externos.
+O **ST Company Registration** foi desenvolvido para atender aos requisitos da avaliação técnica da Super Terminais.
 
-A solução contempla os fluxos de:
+A solução permite o cadastro, gerenciamento e aprovação de empresas por usuários internos e externos, seguindo as regras de negócio definidas na especificação funcional.
 
-* 🏢 Pessoa Jurídica
-* 👤 Pessoa Física
-* 🌎 Pessoa Estrangeira
-* 👨‍💼 Usuário Interno
-* 👨‍💻 Usuário Externo
+O sistema contempla:
 
-Além da implementação dos fluxos de negócio, o projeto também inclui documentação UML e consultas SQL solicitadas na avaliação.
-
----
-
-## 🎯 Objetivos
-
-* Aplicar conceitos de Análise e Desenvolvimento de Sistemas.
-* Desenvolver uma API REST utilizando Java e Spring Boot.
-* Desenvolver uma interface moderna utilizando Vue.js.
-* Modelar os requisitos utilizando UML.
-* Implementar regras de negócio conforme especificação.
-* Demonstrar organização, arquitetura e boas práticas de desenvolvimento.
+* 🏢 Cadastro de Pessoa Jurídica
+* 👤 Cadastro de Pessoa Física
+* 🌎 Cadastro de Pessoa Estrangeira
+* 📋 Gerenciamento de Empresas
+* ✅ Aprovação de Cadastros
+* ❌ Reprovação de Cadastros
+* 👥 Administração de Usuários
+* 🏷️ Administração de Perfis
+* 📄 Gerenciamento de Documentos
+* 🔌 API REST Documentada com Swagger
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+# ✨ Diferenciais Implementados
 
-### Backend
+* Interface moderna desenvolvida com Vue 3
+* API REST utilizando Spring Boot
+* Documentação automática com Swagger/OpenAPI
+* Fluxos distintos para Pessoa Jurídica, Física e Estrangeira
+* Aprovação e reprovação de empresas
+* Administração de usuários e perfis
+* Validação de CPF
+* Validação de CNPJ
+* Upload de documentos obrigatórios e opcionais
+* Arquitetura em camadas
+* Diagramas UML completos
+* Consultas SQL solicitadas na avaliação
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+## Backend
 
 * Java 22
 * Spring Boot
 * Spring Data JPA
 * Maven
 * Bean Validation
+* OpenAPI / Swagger
 
-### Frontend
+## Frontend
 
 * Vue 3
 * Vite
 * Axios
 * CSS3
 
-### Ferramentas
+## Ferramentas
 
 * Git
 * GitHub
@@ -67,186 +80,7 @@ Além da implementação dos fluxos de negócio, o projeto também inclui docume
 
 ---
 
-## 📂 Estrutura do Projeto
-
-```text
-st-company-registration/
-│
-├── backend/
-│   └── company-registration/
-│
-├── frontend/
-│
-├── docs/
-│   ├── diagrams/
-│   ├── sql/
-│   └── screenshots/
-│
-└── README.md
-```
-
----
-
-## ✅ Funcionalidades Implementadas
-
-### Cadastro de Empresas
-
-* Cadastro de Pessoa Jurídica
-* Cadastro de Pessoa Física
-* Cadastro de Pessoa Estrangeira
-* Associação de Perfil
-* Upload de Documentos
-* Validação de Campos Obrigatórios
-
-### Gestão de Empresas
-
-* Listagem de Empresas
-* Consulta de Detalhes
-* Aprovação de Empresas
-* Reprovação de Empresas
-* Atualização de Cadastro
-
-### Validações
-
-* CPF válido
-* CNPJ válido
-* Perfil obrigatório
-* Documento obrigatório
-* Tipos de arquivo permitidos
-* Arquivos duplicados
-
----
-
-## 📐 Diagramas UML
-
-Os diagramas desenvolvidos para atender à avaliação encontram-se na pasta:
-
-```text
-docs/diagrams/
-```
-
-### Diagramas Entregues
-
-* ✅ Diagrama de Caso de Uso
-* ✅ Diagrama de Classe
-* ✅ Diagrama de Atividade
-
----
-
-## 🗄️ Banco de Dados
-
-A modelagem foi construída com base nos requisitos funcionais da avaliação.
-
-### Principais Entidades
-
-* Empresa
-* Documento
-* Usuário
-* Perfil
-
----
-
-## 🧾 Consultas SQL
-
-As consultas da Parte 02 da avaliação encontram-se na pasta:
-
-```text
-docs/sql/
-```
-
-### Consultas Implementadas
-
-* Funcionários com cargos e departamentos
-* Funcionários ativos
-* Funcionários da Controladoria
-* Funcionários com salário superior a R$ 2.900,00
-* Quantidade de funcionários por departamento
-
----
-
-## 🚀 Como Executar o Projeto
-
-### Backend
-
-```bash
-cd backend/company-registration
-
-./mvnw spring-boot:run
-```
-
-Servidor:
-
-```text
-http://localhost:8080
-```
-
----
-
-### Frontend
-
-```bash
-cd frontend
-
-npm install
-
-npm run dev
-```
-
-Aplicação:
-
-```text
-http://localhost:5173
-```
-
----
-
-## 📸 Demonstração
-
-Adicionar imagens das telas em:
-
-```text
-docs/screenshots/
-```
-
-Sugestões:
-
-* Tela de Cadastro
-* Tela de Listagem
-* Tela de Aprovação
-* Tela de Reprovação
-* Dashboard
-
----
-
-## 📦 Entregáveis da Avaliação
-
-### Parte 01
-
-* ✅ Desenvolvimento Backend
-* ✅ Desenvolvimento Frontend
-* ✅ Regras de Negócio
-* ✅ Fluxos Principais
-* ✅ Fluxos Alternativos
-* ✅ Validações
-* ✅ Tratamento de Exceções
-
-### Documentação
-
-* ✅ Diagrama de Caso de Uso
-* ✅ Diagrama de Classe
-* ✅ Diagrama de Atividade
-
-### Parte 02
-
-* ✅ Consultas SQL
-* ✅ Relacionamentos entre tabelas
-* ✅ Consultas utilizando JOIN, WHERE e GROUP BY
-
----
-
-## 🏗️ Arquitetura
-
-O projeto segue uma arquitetura em camadas:
+# 🏗️ Arquitetura
 
 ```text
 Frontend (Vue 3)
@@ -266,21 +100,240 @@ Banco de Dados
 
 ---
 
-## 👨‍💻 Desenvolvedor
-
-**Jonas Santos**
-
-GitHub:
+# 📂 Estrutura do Projeto
 
 ```text
-https://github.com/jonasjss
+st-company-registration/
+│
+├── backend/
+│   └── company-registration/
+│
+├── frontend/
+│
+├── docs/
+│   ├── diagrams/
+│   ├── sql/
+│   └── screenshots/
+│
+└── README.md
 ```
 
 ---
 
-## 📄 Observação
+# ✅ Funcionalidades Implementadas
 
-Este projeto foi desenvolvido exclusivamente para fins de avaliação técnica e demonstração de conhecimentos em análise, modelagem e desenvolvimento de software.
+## Cadastro de Empresas
+
+* Cadastro de Pessoa Jurídica
+* Cadastro de Pessoa Física
+* Cadastro de Pessoa Estrangeira
+* Associação de Perfil
+* Associação de Responsável
+* Upload de Documentos
+* Faturamento Direto
+
+## Gestão de Empresas
+
+* Listagem de Empresas
+* Aprovação de Empresas
+* Reprovação de Empresas
+* Consulta de Empresas
+* Atualização de Status
+
+## Administração
+
+* Cadastro de Perfis
+* Cadastro de Usuários
+* Controle de Responsáveis
+
+## Validações
+
+* CPF válido
+* CNPJ válido
+* Perfil obrigatório
+* Documento obrigatório
+* Arquivos duplicados
+* Tipos de arquivo permitidos
 
 ---
 
+# 📸 Demonstração do Sistema
+
+## 🏠 Tela Principal do Sistema
+
+Visão geral da aplicação com acesso rápido às funcionalidades principais.
+
+![Tela Principal](docs/screenshots/Tela%20Principal%20do%20Sistema.png)
+
+---
+
+## 🏢 Cadastro de Empresa – Pessoa Jurídica
+
+Fluxo de cadastro para empresas nacionais utilizando CNPJ.
+
+![Pessoa Jurídica](docs/screenshots/Cadastro%20de%20Empresa%20-%20Juridica.png)
+
+---
+
+## 👤 Cadastro de Empresa – Pessoa Física
+
+Fluxo de cadastro para pessoas físicas utilizando CPF.
+
+![Pessoa Física](docs/screenshots/Cadastro%20de%20Empresa%20-%20Fisica.png)
+
+---
+
+## 🌎 Cadastro de Empresa – Pessoa Estrangeira
+
+Fluxo de cadastro para empresas estrangeiras utilizando identificador internacional.
+
+![Pessoa Estrangeira](docs/screenshots/Cadastro%20de%20Empresa%20-%20Estrangeira.png)
+
+---
+
+## 📋 Listagem e Aprovação de Empresas
+
+Tela de acompanhamento dos cadastros com aprovação e reprovação de solicitações.
+
+![Empresas](docs/screenshots/Empresa%20Cadastradas.png)
+
+---
+
+## ⚙️ Administração de Perfis e Usuários
+
+Gerenciamento dos perfis e usuários utilizados nos fluxos do sistema.
+
+![Administração](docs/screenshots/Administracao.png)
+
+---
+
+## 🔌 Documentação da API
+
+Documentação automática dos endpoints através do Swagger/OpenAPI.
+
+![Swagger](docs/screenshots/APIs.png)
+
+---
+
+# 📐 Diagramas UML
+
+Os diagramas desenvolvidos para atender aos requisitos da avaliação encontram-se na pasta:
+
+```text
+docs/diagrams/
+```
+
+## Diagramas Entregues
+
+* ✅ Diagrama de Caso de Uso
+* ✅ Diagrama de Classe
+* ✅ Diagrama de Atividade
+
+---
+
+# 🧾 Consultas SQL
+
+As consultas da Parte 02 encontram-se na pasta:
+
+```text
+docs/sql/
+```
+
+Consultas implementadas:
+
+* Funcionários com cargos e departamentos
+* Funcionários ativos
+* Funcionários da Controladoria
+* Funcionários com salário superior a R$ 2.900,00
+* Quantidade de funcionários por departamento
+
+---
+
+# 📦 Requisitos Atendidos
+
+| Requisito                 | Status |
+| ------------------------- | ------ |
+| Backend Java              | ✅      |
+| Frontend Vue.js           | ✅      |
+| Cadastro de Empresas      | ✅      |
+| Aprovação/Reprovação      | ✅      |
+| Administração de Usuários | ✅      |
+| Administração de Perfis   | ✅      |
+| Swagger/OpenAPI           | ✅      |
+| Diagrama de Caso de Uso   | ✅      |
+| Diagrama de Classe        | ✅      |
+| Diagrama de Atividade     | ✅      |
+| Consultas SQL             | ✅      |
+| Documentação Técnica      | ✅      |
+
+---
+
+# 🚀 Como Executar o Projeto
+
+## Backend
+
+### Windows
+
+```bash
+cd backend/company-registration
+
+mvnw.cmd spring-boot:run
+```
+
+### Linux / macOS
+
+```bash
+cd backend/company-registration
+
+./mvnw spring-boot:run
+```
+
+Aplicação disponível em:
+
+```text
+http://localhost:8080
+```
+
+Swagger:
+
+```text
+http://localhost:8080/swagger-ui/index.html
+```
+
+---
+
+## Frontend
+
+```bash
+cd frontend
+
+npm install
+
+npm run dev
+```
+
+Aplicação disponível em:
+
+```text
+http://localhost:5173
+```
+
+---
+
+# 👨‍💻 Desenvolvedor
+
+**Jonas Santos**
+
+Desenvolvedor Full Stack
+
+GitHub:
+
+https://github.com/jonasjss
+
+---
+
+# 📄 Observação
+
+Projeto desenvolvido exclusivamente para fins de avaliação técnica da Super Terminais, com o objetivo de demonstrar conhecimentos em análise de sistemas, modelagem UML, desenvolvimento Full Stack e banco de dados.
+
+---
