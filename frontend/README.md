@@ -85,8 +85,8 @@ Campos comuns:
 - Usuário que cadastra
 - Responsável externo
 - Nome fantasia
-- Documento obrigatório
-- Documento opcional
+- Documento obrigatório, com nome e tipo do arquivo
+- Documento opcional, com nome e tipo do arquivo
 
 ### Empresas cadastradas
 
@@ -127,6 +127,6 @@ Ela é importada diretamente no componente principal `App.vue`.
 
 ## Observações
 
-- O upload real de arquivos não foi implementado; a interface registra nome e tipo do documento para demonstrar a regra de anexos.
+- O armazenamento físico/upload real de arquivos não foi implementado; a interface registra metadados do documento, como nome e tipo, para demonstrar a regra de anexos.
 - A autenticação por certificado digital é uma pré-condição do documento, mas não foi implementada neste protótipo.
 - A seção **Dados auxiliares / Administração** existe para facilitar a criação de perfis e usuários durante a avaliação.

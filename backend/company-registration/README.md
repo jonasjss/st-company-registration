@@ -96,6 +96,7 @@ DELETE /api/empresas/{id}
 
 ```text
 GET    /api/perfis
+GET    /api/perfis/{id}
 POST   /api/perfis
 PUT    /api/perfis/{id}
 DELETE /api/perfis/{id}
@@ -105,9 +106,20 @@ DELETE /api/perfis/{id}
 
 ```text
 GET    /api/usuarios
+GET    /api/usuarios/{id}
 POST   /api/usuarios
 PUT    /api/usuarios/{id}
 DELETE /api/usuarios/{id}
+```
+
+### Documentos
+
+```text
+GET    /api/documentos
+GET    /api/documentos/{id}
+POST   /api/documentos
+PUT    /api/documentos/{id}
+DELETE /api/documentos/{id}
 ```
 
 ## Regras implementadas
@@ -115,7 +127,7 @@ DELETE /api/usuarios/{id}
 - Cadastro de empresa jurídica, física e estrangeira.
 - Validação de CPF e CNPJ.
 - Perfil obrigatório.
-- Documento obrigatório.
+- Documento obrigatório com registro de metadados.
 - Validação de formatos: PDF, PNG, JPG e JPEG.
 - Bloqueio de documento duplicado.
 - Usuário externo cadastra empresa como `PENDENTE`.
@@ -150,4 +162,4 @@ No Windows/PowerShell:
 ## Observações
 
 - A autenticação por certificado digital é tratada como pré-condição do fluxo, conforme o documento, mas não foi implementada neste protótipo.
-- O armazenamento real de arquivos não foi implementado; o sistema registra metadados demonstrativos do documento.
+- O armazenamento físico/upload real de arquivos não foi implementado; o sistema registra metadados demonstrativos do documento, como nome, tipo e obrigatoriedade.

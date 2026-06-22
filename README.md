@@ -8,7 +8,8 @@
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.5-6DB33F?style=for-the-badge\&logo=springboot\&logoColor=white)
 ![Vue.js](https://img.shields.io/badge/Vue.js-3-4FC08D?style=for-the-badge\&logo=vuedotjs\&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge\&logo=vite\&logoColor=white)
-![Oracle SQL](https://img.shields.io/badge/Oracle_SQL-Database-F80000?style=for-the-badge\&logo=oracle\&logoColor=white)
+![H2 Database](https://img.shields.io/badge/H2-Local_Database-1021FF?style=for-the-badge)
+![Oracle SQL](https://img.shields.io/badge/Oracle_SQL-Parte_02-F80000?style=for-the-badge\&logo=oracle\&logoColor=white)
 ![Swagger](https://img.shields.io/badge/Swagger-OpenAPI-85EA2D?style=for-the-badge\&logo=swagger\&logoColor=black)
 ![Git](https://img.shields.io/badge/Git-Version_Control-F05032?style=for-the-badge\&logo=git\&logoColor=white)
 ![UML](https://img.shields.io/badge/UML-Documentation-blue?style=for-the-badge)
@@ -31,7 +32,7 @@ O sistema contempla:
 * ❌ Reprovação de Cadastros
 * 👥 Administração de Usuários
 * 🏷️ Administração de Perfis
-* 📄 Gerenciamento de Documentos
+* 📄 Registro de Metadados de Documentos
 * 🔌 API REST Documentada com Swagger
 
 ---
@@ -46,9 +47,10 @@ O sistema contempla:
 * Administração de usuários e perfis
 * Validação de CPF
 * Validação de CNPJ
-* Upload de documentos obrigatórios e opcionais
+* Registro de metadados de documentos obrigatórios e opcionais
 * Arquitetura em camadas
 * Diagramas UML completos
+* Modelo de dados documentado
 * Consultas SQL solicitadas na avaliação
 
 ---
@@ -62,13 +64,14 @@ O sistema contempla:
 * Spring Data JPA
 * Maven
 * Bean Validation
+* H2 Database em memória
 * OpenAPI / Swagger
 
 ## Frontend
 
 * Vue 3
 * Vite
-* Axios
+* Fetch API
 * CSS3
 
 ## Ferramentas
@@ -129,7 +132,7 @@ st-company-registration/
 * Cadastro de Pessoa Estrangeira
 * Associação de Perfil
 * Associação de Responsável
-* Upload de Documentos
+* Registro de Documentos
 * Faturamento Direto
 
 ## Gestão de Empresas
@@ -228,6 +231,7 @@ docs/diagrams/
 * ✅ Diagrama de Caso de Uso
 * ✅ Diagrama de Classe
 * ✅ Diagrama de Atividade
+* ✅ Modelo de Dados
 
 ---
 
@@ -263,6 +267,7 @@ Consultas implementadas:
 | Diagrama de Caso de Uso   | ✅      |
 | Diagrama de Classe        | ✅      |
 | Diagrama de Atividade     | ✅      |
+| Modelo de Dados           | ✅      |
 | Consultas SQL             | ✅      |
 | Documentação Técnica      | ✅      |
 
@@ -297,7 +302,7 @@ http://localhost:8080
 Swagger:
 
 ```text
-http://localhost:8080/swagger-ui/index.html
+http://localhost:8080/swagger-ui.html
 ```
 
 ---
@@ -335,5 +340,9 @@ https://github.com/jonasjss
 # 📄 Observação
 
 Projeto desenvolvido exclusivamente para fins de avaliação técnica da Super Terminais, com o objetivo de demonstrar conhecimentos em análise de sistemas, modelagem UML, desenvolvimento Full Stack e banco de dados.
+
+O backend utiliza banco H2 em memória para execução local e demonstração da aplicação. As consultas SQL em Oracle SQL correspondem à Parte 02 da avaliação técnica.
+
+O armazenamento físico/upload real de arquivos não foi implementado neste protótipo; o sistema registra os metadados dos documentos, como nome, tipo e obrigatoriedade, para demonstrar as regras de negócio relacionadas aos anexos.
 
 ---
